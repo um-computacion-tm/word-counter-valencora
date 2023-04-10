@@ -1,5 +1,5 @@
 import unittest
-frase = "hola la la"
+
 def ContadorDePalabras(frase):
     result = {}
     lista = frase.split(' ')

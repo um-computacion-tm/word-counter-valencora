@@ -1,11 +1,12 @@
 import unittest
-from ContadorDePalabras import ContadorDePalabras,frase
+from ContadorDePalabras import ContadorDePalabras
 
 class TestContadorDePalabras(unittest.TestCase):
 
    def test_1 (self):
        
-       self.assertEqual(ContadorDePalabras(frase),{
+       resultado = ContadorDePalabras("hola la la")
+       self.assertEqual(resultado,{
            'hola':1,
            'la':2
        })
